@@ -4,8 +4,7 @@ author: "Blanca Ruiz"
 date: today
 format:
   docx:
-    toc: true          # Include table of contents
-    toc-depth: 3       # Levels in TOC
+    toc: false          # Do not include table of contents
 
 execute:
   echo: true          # Show code in the output document
