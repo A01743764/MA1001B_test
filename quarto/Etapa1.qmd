@@ -14,10 +14,11 @@ execute:
 # Exploración de la base de datos
 
 ```{r}
+library(tidyverse)
 library(here)
 
-M19 <- read.csv(here("data", "Datos_molec_2019.csv"))
-M20 <- read.csv(here("data", "Datos_molec_2020.csv"))
+M19 <- read_csv(here("data", "Datos_molec_2019.csv"))
+M20 <- read_csv(here("data", "Datos_molec_2020.csv"))
 str(M19)
 ```
 
@@ -26,7 +27,7 @@ str(M19)
 ## Diccionarios
 
 ```{r}
-Dicc19 <- read.csv(here("data", "Diccionario_molec_2019.csv"))
+Dicc19 <- read_csv(here("data", "Diccionario_molec_2019.csv"))
 ```
 
 El diccionario indica qué significan las variables en el contexto del problema, pero no a qué equivalen sus categorías. Eso se debe leer en el archivo de descriptor de las preguntas y en el cuestionario.
